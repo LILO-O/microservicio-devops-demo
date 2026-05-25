@@ -1,37 +1,51 @@
-# microservicio-devops-demo
+# Microservicio DevOps Demo
 
 ## Descripción
-Repositorio de microservicio preparado para pipeline DevOps.
 
-## Estrategia de ramificación
+Repositorio de microservicio desarrollado como demostración de prácticas DevOps utilizando Node.js, Docker y GitHub Actions.
+
+El proyecto implementa:
+- Integración continua (CI)
+- Contenedorización con Docker
+- Orquestación con Docker Compose
+- Testing automatizado
+- Estrategia GitFlow
+- Automatización mediante GitHub Actions
+
+---
+
+# Tecnologías utilizadas
+
+- Node.js
+- Express
+- Docker
+- Docker Compose
+- GitHub Actions
+- Jest
+- Git
+- GitFlow
+
+---
+
+# Estrategia de ramas
+
 Se utiliza GitFlow.
 
-Ramas principales:
-- main
-- develop
+## Ramas principales
 
-Ramas de apoyo:
-- feature/*
-- hotfix/*
+- `main`
+- `develop`
 
-## Justificación
-Permite trabajo colaborativo ordenado, trazabilidad y control de versiones.
+## Ramas de apoyo
 
-## Flujo de trabajo
-- feature → develop
-- develop → main
-- hotfix → main
+- `feature/*`
+- `hotfix/*`
 
-## Convenciones
+---
 
-### Naming de ramas
-- feature/nombre
-- hotfix/nombre
+# Flujo de trabajo
 
-### Commits
-- feat: nueva funcionalidad
-- fix: corrección
-- docs: documentación
-
-## Automatización
-Se utiliza GitHub Actions para ejecutar un pipeline en cada push a develop y pull request a main.
+```text
+feature → develop
+develop → main
+hotfix → main
